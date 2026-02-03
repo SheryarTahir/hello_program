@@ -1,12 +1,15 @@
 fn main() {
 
-    let num1: u8 = 5;
-    let num2: u8 = 10;
-    let result: u8 = add(num1, num2);
-    println!("The sum of num1 and num2 is: {}", result);
+    // OWNERSHIP
+    let outside_variable: u8 = 5;
+
+    {
+        let inside_variable: u8 = 15;
+        println!("The inside variable: {}", inside_variable);
+    }
+    println!("The inside variable: {}", inside_variable);
+    println!("The outside variable: {}", outside_variable);
 }
 
-fn add(num1: u8, num2: u8) -> u8{
-    return num1 + num2;
-}
+
 
