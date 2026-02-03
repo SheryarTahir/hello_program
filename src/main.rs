@@ -1,13 +1,12 @@
 fn main() {
 
-    // Tuple
-    let emp_info: (&str, u8) = ("Sheryar", 26);
-
-    let emp_name = emp_info.0;
-    let emp_age = emp_info.1;
-
-    // Destructuring
-    let (employee_name, employee_age) = emp_info;
-    println!("Employee Name: {}, Employee Age: {}", employee_name, employee_age);
-    print!("Employee Name: {}, Employee Age: {}", emp_name, emp_age);
+    let num1: u8 = 5;
+    let num2: u8 = 10;
+    let result: u8 = add(num1, num2);
+    println!("The sum of num1 and num2 is: {}", result);
 }
+
+fn add(num1: u8, num2: u8) -> u8{
+    return num1 + num2;
+}
+
