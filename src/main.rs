@@ -1,4 +1,29 @@
-// References 
+// ARRAYS
+
+fn main () {
+
+    let mut arr;
+    arr = [1,2,3,4,5];
+
+    println!("arr = {}", arr[0]);
+    println!("arr = {:?}", arr);
+
+    arr[2] = 30;
+    println!("arr = {:?}", arr);
+
+
+    println!("Array length is: {}", arr.len());
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* // References 
 
 fn main() {
 
@@ -9,7 +34,7 @@ fn main() {
     println!("{}", y);
 
 
-}
+} */
 
 
 
